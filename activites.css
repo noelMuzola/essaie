@@ -1,0 +1,454 @@
+/* ========================================
+   PAGE MESSE - STYLES SPÉCIFIQUES
+   ======================================== */
+
+/* ========================================
+   SECTION HÉROÏQUE
+   ======================================== */
+.messe-hero {
+    position: relative;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 350px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 16px;
+}
+
+.messe-hero::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.7));
+    z-index: 1;
+}
+
+.messe-hero-content {
+    max-width: 1024px;
+    position: relative;
+    z-index: 10;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    padding: 48px 0;
+}
+
+.messe-hero-title {
+    font-size: 32px;
+    font-weight: 900;
+    color: white;
+    line-height: 1.2;
+    letter-spacing: -0.5px;
+}
+
+@media (min-width: 768px) {
+    .messe-hero-title {
+        font-size: 48px;
+    }
+}
+
+.messe-hero-subtitle {
+    font-size: 18px;
+    font-weight: 300;
+    color: rgba(255, 255, 255, 0.9);
+    line-height: 1.6;
+    max-width: 512px;
+    margin: 0 auto;
+}
+
+@media (min-width: 768px) {
+    .messe-hero-subtitle {
+        font-size: 20px;
+    }
+}
+
+/* ========================================
+   SECTION HORAIRES
+   ======================================== */
+.messe-section {
+    margin-top: -64px;
+    position: relative;
+    z-index: 10;
+    margin-bottom: 80px;
+}
+
+.messe-schedule-card {
+    background: white;
+    border-radius: 16px;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
+    padding: 32px 24px;
+    border: 1px solid #f0f3f4;
+}
+
+@media (min-width: 768px) {
+    .messe-schedule-card {
+        padding: 48px;
+    }
+}
+
+.schedule-header {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.schedule-label {
+    color: var(--primary);
+    font-weight: 700;
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.schedule-title {
+    font-size: 24px;
+    font-weight: 700;
+    color: #111618;
+    margin-top: 8px;
+}
+
+@media (min-width: 768px) {
+    .schedule-title {
+        font-size: 32px;
+    }
+}
+
+.schedule-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 32px;
+}
+
+@media (min-width: 768px) {
+    .schedule-grid {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 32px;
+        border-top: 1px solid #f0f3f4;
+        border-bottom: 1px solid #f0f3f4;
+        padding: 32px 0;
+    }
+}
+
+.schedule-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 16px;
+}
+
+@media (min-width: 768px) {
+    .schedule-item {
+        border-right: 1px solid #f0f3f4;
+        padding: 0;
+    }
+
+    .schedule-item:last-child {
+        border-right: none;
+    }
+}
+
+.schedule-icon-box {
+    width: 64px;
+    height: 64px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 24px;
+    background: rgba(236, 19, 19, 0.1);
+    color: var(--primary);
+}
+
+.schedule-icon-box.gold {
+    background: rgba(212, 175, 55, 0.1);
+    color: var(--accent-gold);
+}
+
+.schedule-day {
+    font-size: 20px;
+    font-weight: 700;
+    color: #111618;
+    margin-bottom: 8px;
+}
+
+.schedule-time {
+    font-size: 28px;
+    font-weight: 900;
+    color: var(--primary);
+    margin-bottom: 16px;
+}
+
+.schedule-time.gold {
+    color: var(--accent-gold);
+}
+
+.schedule-type {
+    font-weight: 700;
+    color: #333;
+    margin-bottom: 4px;
+}
+
+.schedule-description {
+    font-size: 13px;
+    color: #999;
+    line-height: 1.4;
+}
+
+/* ========================================
+   SECTION DÉPARTEMENTS
+   ======================================== */
+.departments-section {
+    background: #faf9f6;
+    padding: 80px 16px;
+}
+
+.departments-header {
+    text-align: center;
+    margin-bottom: 48px;
+}
+
+.departments-label {
+    color: var(--accent-gold);
+    font-weight: 700;
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.departments-title {
+    font-size: 28px;
+    font-weight: 700;
+    color: #111618;
+    margin-top: 8px;
+    margin-bottom: 16px;
+}
+
+@media (min-width: 768px) {
+    .departments-title {
+        font-size: 36px;
+    }
+}
+
+.departments-description {
+    color: #666;
+    max-width: 512px;
+    margin: 0 auto;
+}
+
+.departments-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 24px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+@media (min-width: 768px) {
+    .departments-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (min-width: 1024px) {
+    .departments-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+.department-card {
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    padding: 24px;
+    border: 1px solid #f0f3f4;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    transition: all 0.3s ease;
+}
+
+.department-card:hover {
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+    transform: translateY(-4px);
+}
+
+.department-icon-box {
+    width: 48px;
+    height: 48px;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+    background: rgba(236, 19, 19, 0.1);
+    color: var(--primary);
+    transition: all 0.3s ease;
+}
+
+.department-icon-box.gold {
+    background: rgba(212, 175, 55, 0.1);
+    color: var(--accent-gold);
+}
+
+.department-card:hover .department-icon-box {
+    background: var(--primary);
+    color: white;
+}
+
+.department-card:hover .department-icon-box.gold {
+    background: var(--accent-gold);
+    color: white;
+}
+
+.department-title {
+    font-size: 18px;
+    font-weight: 700;
+    color: #111618;
+    margin-bottom: 12px;
+}
+
+.department-description {
+    font-size: 14px;
+    color: #666;
+    line-height: 1.6;
+    margin-bottom: 24px;
+    flex-grow: 1;
+}
+
+.department-link {
+    color: var(--primary);
+    font-weight: 700;
+    font-size: 13px;
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    transition: color 0.3s ease;
+}
+
+.department-link:hover {
+    color: var(--primary-dark);
+}
+
+.department-card .department-link.gold {
+    color: var(--accent-gold);
+}
+
+.department-card:hover .department-link.gold {
+    color: #b08d2b;
+}
+
+/* ========================================
+   SECTION CTA
+   ======================================== */
+.cta-section {
+    background: var(--primary);
+    color: white;
+    padding: 48px 16px;
+    text-align: center;
+}
+
+.cta-title {
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 16px;
+}
+
+@media (min-width: 768px) {
+    .cta-title {
+        font-size: 28px;
+    }
+}
+
+.cta-description {
+    color: rgba(255, 255, 255, 0.9);
+    margin-bottom: 32px;
+    max-width: 512px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.cta-buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    justify-content: center;
+}
+
+@media (min-width: 640px) {
+    .cta-buttons {
+        flex-direction: row;
+    }
+}
+
+.btn-cta-primary {
+    background: white;
+    color: var(--primary);
+    font-weight: 700;
+    padding: 12px 32px;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.btn-cta-primary:hover {
+    background: #f0f0f0;
+}
+
+.btn-cta-secondary {
+    background: transparent;
+    color: white;
+    border: 2px solid white;
+    font-weight: 700;
+    padding: 10px 30px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.btn-cta-secondary:hover {
+    background: rgba(255, 255, 255, 0.1);
+}
+
+/* ========================================
+   RESPONSIVITÉ
+   ======================================== */
+@media (max-width: 640px) {
+    .messe-hero {
+        min-height: 300px;
+    }
+
+    .messe-hero-title {
+        font-size: 28px;
+    }
+
+    .messe-hero-subtitle {
+        font-size: 16px;
+    }
+
+    .messe-section {
+        margin-top: -48px;
+        margin-bottom: 60px;
+    }
+
+    .messe-schedule-card {
+        padding: 24px 16px;
+    }
+
+    .schedule-title {
+        font-size: 20px;
+    }
+
+    .departments-title {
+        font-size: 24px;
+    }
+
+    .cta-section {
+        padding: 32px 16px;
+    }
+}

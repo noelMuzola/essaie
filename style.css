@@ -2,9 +2,9 @@
    VARIABLES DE COULEURS ET THÈME
    ======================================== */
 :root {
-    --primary: #13a4ec;
-    --primary-dark: #0b8ac6;
-    --primary-light: #8dd4f7;
+    --primary: #ec1313;
+    --primary-dark: #0e0d0d;
+    --primary-light: #fd5c5c;
     --accent-gold: #d4af37;
     --gold-dark: #c4a030;
     --bg-light: #faf9f6;
@@ -78,7 +78,7 @@ a:hover {
    HEADER / BARRE DE NAVIGATION
    ======================================== */
 header {
-    background: rgba(255, 255, 255, 0.95);
+    background: rgba(0, 0, 0, 0.95);
     backdrop-filter: blur(10px);
     border-bottom: 1px solid var(--border-light);
     position: sticky;
@@ -116,10 +116,11 @@ header {
 }
 
 .logo-text h2 {
-    font-size: 20px;
+    font-size: 25px;
     font-weight: 700;
     letter-spacing: -0.5px;
     margin: 0;
+    color: var(--bg-light);
 }
 
 .logo-text span {
@@ -135,12 +136,13 @@ nav {
     display: flex;
     gap: 32px;
     align-items: center;
+    
 }
 
 nav a {
-    font-size: 14px;
+    font-size: 16px;
     font-weight: 600;
-    color: var(--text-dark);
+    color: var(--bg-light);
     padding-bottom: 4px;
     border-bottom: 3px solid transparent;
     transition: all 0.3s ease;
@@ -162,8 +164,12 @@ nav a:hover {
     gap: 16px;
 }
 
+.redImg{
+    border: solid 0.3px rgb(245, 163, 163);
+}
+
 .btn-donate {
-    background: var(--accent-gold);
+    background: linear-gradient(135deg, var(--primary), var(--primary-light)) !important;
     color: white;
     padding: 10px 24px;
     border-radius: 50px;
@@ -187,7 +193,7 @@ nav a:hover {
     border: none;
     cursor: pointer;
     font-size: 24px;
-    color: var(--text-gray);
+    color: var(--bg-light );
 }
 
 /* ========================================
@@ -257,12 +263,88 @@ nav a:hover {
     font-weight: 900;
     line-height: 1.2;
     letter-spacing: -1px;
-    margin-bottom: 24px;
+    margin-bottom: 4px;
     text-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
 }
 
 .hero-title .highlight {
     color: var(--primary-light);
+}
+
+.sub-title {
+    font-size: 38px;
+    color: white;
+    font-weight: 900;
+    line-height: 1.2;
+    letter-spacing: -1px;
+    margin-bottom: 24px;
+    text-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+}
+
+.sub-title .highlight {
+    color: var(--primary-light);
+}
+
+/* ========================================
+   MENU MOBILE
+   ======================================== */
+.mobile-menu {
+    display: none;
+    position: absolute;
+    top: 80px;
+    right: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.98);
+    backdrop-filter: blur(10px);
+    flex-direction: column;
+    gap: 0;
+    padding: 20px 0;
+    border-bottom: 1px solid var(--border-light);
+    z-index: 40;
+    max-height: calc(100vh - 80px);
+    overflow-y: auto;
+}
+
+.mobile-menu.active {
+    display: flex;
+}
+
+.mobile-menu a {
+    padding: 16px 20px;
+    color: var(--bg-light);
+    text-decoration: none;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    transition: all 0.3s ease;
+    display: flex;
+    align-items: center;
+}
+
+.mobile-menu a:hover {
+    background: rgba(236, 19, 19, 0.1);
+    color: var(--primary-light);
+    padding-left: 30px;
+}
+
+.mobile-menu a.actived {
+    background: rgba(236, 19, 19, 0.15);
+    color: var(--primary-light);
+    font-weight: 600;
+}
+
+.mobile-donate-btn {
+    background: linear-gradient(135deg, var(--primary), var(--primary-light)) !important;
+    color: white !important;
+    font-weight: 600;
+    margin: 10px 20px;
+    border-radius: 8px;
+    text-align: center;
+    justify-content: center;
+    border: none !important;
+}
+
+.mobile-donate-btn:hover {
+    background: var(--gold-dark) !important;
+    box-shadow: 0 6px 20px rgba(212, 175, 55, 0.4);
 }
 
 @media (max-width: 768px) {
@@ -899,7 +981,7 @@ main {
    FOOTER
    ======================================== */
 footer {
-    background: white;
+    background: rgb(0, 0, 0);
     border-top: 1px solid var(--border-gray);
     margin-top: auto;
 }
@@ -919,7 +1001,7 @@ footer {
 
 .footer-section h3 {
     font-size: 16px;
-    color: var(--text-dark);
+    color: var(--bg-light);
     margin-bottom: 16px;
     font-weight: 700;
 }
@@ -939,6 +1021,7 @@ footer {
 .footer-logo-text {
     font-weight: 700;
     font-size: 16px;
+    color: var(--bg-light);
 }
 
 .footer-description {

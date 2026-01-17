@@ -1,0 +1,178 @@
+/* ========================================
+   PAGE ÉVÉNEMENTS - STYLES SPÉCIFIQUES
+   ======================================== */
+
+/* ========================================
+   SECTION HÉROÏQUE
+   ======================================== */
+.hero-banner {
+    position: relative;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 350px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 16px;
+}
+
+.hero-overlay {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.7));
+    z-index: 1;
+}
+
+.hero-banner-content {
+    max-width: 768px;
+    position: relative;
+    z-index: 10;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    padding: 48px 0;
+}
+
+.hero-banner-title {
+    font-size: 32px;
+    font-weight: 900;
+    color: white;
+    line-height: 1.2;
+    letter-spacing: -0.5px;
+}
+
+@media (min-width: 768px) {
+    .hero-banner-title {
+        font-size: 48px;
+    }
+}
+
+.hero-banner-subtitle {
+    font-size: 18px;
+    font-weight: 300;
+    color: rgba(255, 255, 255, 0.9);
+    line-height: 1.6;
+    max-width: 512px;
+    margin: 0 auto;
+}
+
+@media (min-width: 768px) {
+    .hero-banner-subtitle {
+        font-size: 20px;
+    }
+}
+
+.hero-gradient {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 64px;
+    background: linear-gradient(to top, var(--bg-light), transparent);
+    z-index: 2;
+}
+
+/* ========================================
+   SECTION PRINCIPALE
+   ======================================== */
+.page-main {
+    flex-grow: 1;
+    max-width: 1200px;
+    margin: 0 auto;
+    width: 100%;
+    padding: 0 16px;
+    padding-top: 48px;
+    padding-bottom: 48px;
+}
+
+/* ========================================
+   EN-TÊTE DES ÉVÉNEMENTS
+   ======================================== */
+.events-header-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-end;
+    gap: 16px;
+    margin-bottom: 40px;
+    padding-bottom: 24px;
+    border-bottom: 1px solid #f0f3f4;
+}
+
+@media (min-width: 768px) {
+    .events-header-section {
+        flex-direction: row;
+        align-items: center;
+    }
+}
+
+.events-header-info {
+    width: 100%;
+    flex: 1;
+}
+
+.events-title {
+    font-size: 24px;
+    font-weight: 700;
+    color: #111618;
+    margin-bottom: 8px;
+}
+
+.events-subtitle {
+    font-size: 14px;
+    color: #999;
+    margin-top: 4px;
+}
+
+.events-filters {
+    display: flex;
+    gap: 8px;
+    width: 100%;
+}
+
+@media (min-width: 768px) {
+    .events-filters {
+        width: auto;
+    }
+}
+
+.search-wrapper {
+    position: relative;
+    flex: 1;
+}
+
+@media (min-width: 768px) {
+    .search-wrapper {
+        width: 256px;
+        flex: none;
+    }
+}
+
+/* ========================================
+   RESPONSIVITÉ
+   ======================================== */
+@media (max-width: 640px) {
+    .hero-banner {
+        min-height: 300px;
+    }
+
+    .hero-banner-title {
+        font-size: 28px;
+    }
+
+    .hero-banner-subtitle {
+        font-size: 16px;
+    }
+
+    .page-main {
+        padding-top: 32px;
+        padding-bottom: 32px;
+    }
+
+    .events-title {
+        font-size: 20px;
+    }
+}

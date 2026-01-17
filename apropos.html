@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html class="light" lang="fr">
+<head>
+    <meta charset="utf-8"/>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+    <title>À propos - Saint Levan</title>
+    <link href="https://fonts.googleapis.com" rel="preconnect"/>
+    <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;900&family=Noto+Sans:wght@400;500;700&display=swap" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="components.css" />
+    <link rel="stylesheet" href="apropos.css" />
+</head>
+<body class="light">
+    <header class="header">
+        <div class="header-content">
+            <div class="logo-section">
+                <div class="logo-icon">
+                        <span class="material-symbols-outlined">church</span>
+                    </div>
+                    <div class="logo-text">
+                        <h2>Saint Levan</h2>
+                    </div>
+            </div>
+            <nav>
+                <a href="index.html">Accueil</a>
+                <a href="activites.html">Activités</a>
+                <a href="evenement.html">Événements</a>
+                <a class="actived" href="apropos.html">Apropos</a>
+                <a href="contact.html">Contact</a>
+            </nav>
+            <div class="header-buttons">
+                <button class="btn-donate">
+                    <span>Faire un don</span>
+                </button>
+                <button class="mobile-menu-btn" id="mobile-menu-btn">
+                    <span class="material-symbols-outlined">menu</span>
+                </button>
+            </div>
+        </div>
+        <nav class="mobile-menu" id="mobile-menu">
+            <a href="index.html">Accueil</a>
+            <a href="activites.html">Activités</a>
+            <a href="evenement.html">Événements</a>
+            <a class="actived" href="apropos.html">Apropos</a>
+            <a href="contact.html">Contact</a>
+            <a href="don.html" class="mobile-donate-btn">Faire un don</a>
+        </nav>
+    </header>
+
+    <script>
+        const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+        
+        mobileMenuBtn.addEventListener('click', function() {
+            mobileMenu.classList.toggle('active');
+        });
+    </script>
+    <section class="apropos-hero" style='background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.6)), url("https://lh3.googleusercontent.com/aida-public/AB6AXuBrelEsuFlAxJeTKl1WBZ5rp5-zSBHVnSaRKc-KUf8AHf_CRNq3hq1fN3UHvaFYBtDxsudSFr6jsqcJnvZfMMMJlcupBULl7k8kF5SH4hy8XaX-G-N0RmP73QF2zOu2U6RTm-5ExqyQnPnOr9Oxj_ioK5iAo4wOR7_bYqbX52r5OzbaT-CRts6GElPH5j3K78iqFbm3QFxD73iZ28RGOprUeLvI-BGBRaYuJVPfMQoJ6hMhpfxgh-brFP4ymBBugx-iKQcJBIdq0Gw");'>
+        <div class="apropos-hero-content">
+            <h1 class="apropos-hero-title">
+                Une communauté de Foi, d'Amour et d'Espérance
+            </h1>
+            <p class="apropos-hero-subtitle">
+                Découvrez qui nous sommes, ce que nous croyons et comment nous œuvrons pour un monde plus lumineux.
+            </p>
+        </div>
+    </section>
+    <main class="apropos-main">
+        <section class="vmv-section">
+            <div class="vmv-grid">
+                <div class="vmv-card">
+                    <div class="vmv-icon-box vision">
+                        <span class="material-symbols-outlined">visibility</span>
+                    </div>
+                    <h3 class="vmv-card-title">Notre Vision</h3>
+                    <p class="vmv-card-text">
+                        Voir chaque vie transformée par la lumière de l'Évangile, créant une communauté rayonnante qui impacte positivement la ville et au-delà.
+                    </p>
+                </div>
+                <div class="vmv-card">
+                    <div class="vmv-icon-box mission">
+                        <span class="material-symbols-outlined">task_alt</span>
+                    </div>
+                    <h3 class="vmv-card-title">Notre Mission</h3>
+                    <p class="vmv-card-text">
+                        Accueillir chacun avec amour, enseigner la vérité biblique avec clarté, et servir notre prochain avec compassion et humilité.
+                    </p>
+                </div>
+                <div class="vmv-card">
+                    <div class="vmv-icon-box values">
+                        <span class="material-symbols-outlined">favorite</span>
+                    </div>
+                    <h3 class="vmv-card-title">Nos Valeurs</h3>
+                    <p class="vmv-card-text">
+                        L'authenticité dans nos relations, la générosité dans nos actions, et la ferveur dans notre spiritualité quotidienne.
+                    </p>
+                </div>
+            </div>
+        </section>
+        <section class="pastor-section">
+            <div class="pastor-container">
+                <div class="pastor-image">
+                    <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuCWbAkzkRrctyR0darMfqrGVeO7-d0yc1ZT83x4-U2J8aWPGCXm7sh9E2ZJ8OX8ejTSlj4Y7HSqKMv10ymyG2aEcrafQZQJi6ZgCHhYNS8C73LAIGGP6OEFOtPyDTjqSiZervMzk2RUxkJw77MVm1hMywQ7lhC6mQf5wlgiF7B6T6ADgQxh2U_-4CHuqM2UuHgYUNBCh5BCNIK2AAC4GPPkNudNKLxjd7VCrfzkTnkIPMOBGPv7iIek7IeCO6UD0r29WNQHwH0QRK4" alt="Pasteur Thomas"/>
+                </div>
+                <div class="pastor-content">
+                    <div class="pastor-label">
+                        <span class="material-symbols-outlined">format_quote</span>
+                        Le mot du pasteur
+                    </div>
+                    <h2 class="pastor-title">Bienvenue chez vous</h2>
+                    <p class="pastor-quote">
+                        "À l'Église Lumière, nous croyons que l'église n'est pas un bâtiment, mais une famille. Peu importe votre parcours, vos doutes ou vos questions, vous avez une place ici. Nous sommes impatients de marcher à vos côtés, de partager vos joies et de vous soutenir dans les épreuves."
+                    </p>
+                    <p class="pastor-quote">
+                        "Notre porte est toujours ouverte. Venez tel que vous êtes, et découvrez la paix et la joie d'une communauté qui aime sincèrement."
+                    </p>
+                    <div>
+                        <h4 class="pastor-name">Pasteur Thomas Leroy</h4>
+                        <p class="pastor-role">Responsable Principal</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="history-section">
+            <div class="history-container">
+                <div class="history-header">
+                    <h2 class="history-title">Notre Histoire</h2>
+                    <div class="history-underline"></div>
+                    <p class="history-subtitle">
+                        Depuis plus de 20 ans, nous écrivons ensemble une histoire de foi et de partage au cœur de notre ville.
+                    </p>
+                </div>
+                <div class="timeline">
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content">
+                            <p class="timeline-year-label">Début</p>
+                            <span class="timeline-year">2003</span>
+                            <h3 class="timeline-item-title">Les débuts</h3>
+                            <p class="timeline-item-description">
+                                Tout a commencé dans un petit salon avec trois familles passionnées par l'idée de créer un lieu d'accueil chaleureux.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content">
+                            <p class="timeline-year-label">Expansion</p>
+                            <span class="timeline-year">2010</span>
+                            <h3 class="timeline-item-title">L'installation</h3>
+                            <p class="timeline-item-description">
+                                L'acquisition de notre bâtiment actuel nous a permis de développer nos programmes pour la jeunesse et l'aide sociale.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content">
+                            <p class="timeline-year-label">Présent</p>
+                            <span class="timeline-year">Aujourd'hui</span>
+                            <h3 class="timeline-item-title">Une famille grandissante</h3>
+                            <p class="timeline-item-description">
+                                Avec plus de 300 membres actifs, nous continuons d'innover pour rester pertinents et proches des besoins de chacun.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="team-section">
+            <div class="team-container">
+                <div class="team-header">
+                    <h2 class="team-title">L'équipe pastorale</h2>
+                    <p class="team-subtitle">Ceux qui vous accompagnent au quotidien</p>
+                </div>
+                <div class="team-grid">
+                    <div class="team-card">
+                        <div class="team-card-image">
+                            <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuBpgqDsFGwZIZ1qG7PeHsvAhilJmKWneAfkvTg_xKujCiLeqDEHrqiVkFxrllR1qyns1CudXKbt40GP2fXb7c9fy0Znq83DO4xBH0wz_o-t48eW70A8hDzmNlBG1armpJIHDZO1cVfg66JXw9z4m03mDMJh3WaSTJBO5IPrZE_8fdeoTkF7Y9DHKOKHr99XXQ2bBhYJpEP8FpjJhVK2Cnia1LIt2o-6IupzuNFv4pgb_4WRYrfZdDpEqm5r-rY1JvTcpX_PvLgWT7I" alt="Pasteur Principal"/>
+                        </div>
+                        <div class="team-card-content">
+                            <h3 class="team-card-name">Thomas Leroy</h3>
+                            <p class="team-card-role">Pasteur Principal</p>
+                        </div>
+                    </div>
+                    <div class="team-card">
+                        <div class="team-card-image">
+                            <div class="team-card-placeholder">
+                                <span class="material-symbols-outlined">person</span>
+                            </div>
+                        </div>
+                        <div class="team-card-content">
+                            <h3 class="team-card-name">Sarah Martin</h3>
+                            <p class="team-card-role">Responsable Jeunesse</p>
+                        </div>
+                    </div>
+                    <div class="team-card">
+                        <div class="team-card-image">
+                            <div class="team-card-placeholder">
+                                <span class="material-symbols-outlined">person</span>
+                            </div>
+                        </div>
+                        <div class="team-card-content">
+                            <h3 class="team-card-name">Marc Dubois</h3>
+                            <p class="team-card-role">Responsable Louange</p>
+                        </div>
+                    </div>
+                    <div class="team-card">
+                        <div class="team-card-image">
+                            <div class="team-card-placeholder">
+                                <span class="material-symbols-outlined">person</span>
+                            </div>
+                        </div>
+                        <div class="team-card-content">
+                            <h3 class="team-card-name">Élise Petit</h3>
+                            <p class="team-card-role">Action Sociale</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="cta-apropos-section">
+            <div class="cta-apropos-container">
+                <h2 class="cta-apropos-title">Envie de nous rencontrer ?</h2>
+                <p class="cta-apropos-description">
+                    Nos cultes ont lieu chaque dimanche à 10h00. Vous êtes les bienvenus, que vous soyez croyant ou simplement curieux.
+                </p>
+                <div class="cta-apropos-buttons">
+                    <button class="cta-btn-primary">
+                        Horaires des cultes
+                    </button>
+                    <button class="cta-btn-secondary">
+                        Nous contacter
+                    </button>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="footer-content">
+            <div class="footer-grid">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <span class="footer-logo-icon material-symbols-outlined">church</span>
+                        <span class="footer-logo-text">Saint Levan</span>
+                    </div>
+                    <p class="footer-description">
+                        Une communauté de foi, d'espérance et d'amour, dédiée à servir notre prochain et à grandir ensemble spirituellement.
+                    </p>
+                </div>
+                <div class="footer-section">
+                    <h3>Liens rapides</h3>
+                    <ul class="footer-list">
+                        <a href="index.html">Accueil</a>
+                        <a href="activites.html">Activités</a>
+                        <a href="evenement.html">Événements</a>
+                        <a href="apropos.html">A propos de nous</a>
+                        <a href="contact.html">Contact</a>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Contact</h3>
+                    <ul class="footer-list" style="list-style: none;">
+                        <li class="contact-info">
+                            <span class="material-symbols-outlined">location_on</span>
+                            <span>123 Av de la Paix<br/>75000 Kinshasa, RDC</span>
+                        </li>
+                        <li class="contact-info">
+                            <span class="material-symbols-outlined">call</span>
+                            <span>+243 85 36 53 815</span>
+                        </li>
+                        <li class="contact-info">
+                            <span class="material-symbols-outlined">mail</span>
+                            <span>contact@saintlevan.fr</span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Restez informés</h3>
+                    <form class="newsletter-form">
+                        <input class="newsletter-input" placeholder="Votre email" type="email" />
+                        <button class="btn-subscribe" type="submit">S'inscrire</button>
+                    </form>
+                </div>
+            </div>
+            <div class="footer-divider"></div>
+            <div class="footer-bottom">
+                <p class="footer-copyright">© 2025 Paroisse Saint Levan. Tous droits réservés.</p>
+                <div class="social-links">
+                    <a href="#" class="social-icon">
+                        <svg class="social-icon" fill="currentColor" viewBox="0 0 24 24"><path d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z"></path></svg>
+                    </a>
+                    <a href="#" class="social-icon">
+                        <svg class="social-icon" fill="currentColor" viewBox="0 0 24 24"><path clip-rule="evenodd" d="M12.315 2c2.43 0 2.784.013 3.808.06 1.064.049 1.791.218 2.427.465a4.902 4.902 0 011.772 1.153 4.902 4.902 0 011.153 1.772c.247.636.416 1.363.465 2.427.048 1.067.06 1.407.06 4.123v.08c0 2.643-.012 2.987-.06 4.043-.049 1.064-.218 1.791-.465 2.427a4.902 4.902 0 01-1.153 1.772 4.902 4.902 0 01-1.772 1.153c-.636.247-1.363.416-2.427.465-1.067.048-1.407.06-4.123.06h-.08c-2.643 0-2.987-.012-4.043-.06-1.064-.049-1.791-.218-2.427-.465a4.902 4.902 0 01-1.772-1.153 4.902 4.902 0 01-1.153-1.772c-.247-.636-.416-1.363-.465-2.427-.047-1.024-.06-1.379-.06-3.808v-.63c0-2.43.013-2.784.06-3.808.049-1.064.218-1.791.465-2.427a4.902 4.902 0 011.153-1.772A4.902 4.902 0 015.468.99c.636-.247 1.363-.416 2.427-.465C8.901 2.013 9.256 2 11.685 2h.63zm-.081 1.802h-.468c-2.456 0-2.784.011-3.807.058-.975.045-1.504.207-1.857.344-.467.182-.8.398-1.15.748-.35.35-.566.683-.748 1.15-.137.353-.3.882-.344 1.857-.047 1.023-.058 1.351-.058 3.807v.468c0 2.456.011 2.784.058 3.807.045.975.207 1.504.344 1.857.182.466.399.8.748 1.15.35.35.683.566 1.15.748.353.137.882.3 1.857.344 1.054.048 1.37.058 4.041.058h.08c2.597 0 2.917-.01 3.96-.058.976-.045 1.505-.207 1.858-.344.466-.182.8-.398 1.15-.748.35-.35.566-.683.748-1.15.137-.353.3-.882.344-1.857.048-1.055.058-1.37.058-4.041v-.08c0-2.597-.01-2.917-.058-3.96-.045-.976-.207-1.505-.344-1.858a3.097 3.097 0 00-.748-1.15 3.098 3.098 0 00-1.15-.748c-.353-.137-.882-.3-1.857-.344-1.023-.047-1.351-.058-3.807-.058zM12 6.865a5.135 5.135 0 110 10.27 5.135 5.135 0 010-10.27zm0 1.802a3.333 3.333 0 100 6.666 3.333 3.333 0 000-6.666zm5.338-3.205a1.2 1.2 0 110 2.4 1.2 1.2 0 010-2.4z" fill-rule="evenodd"></path></svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body></html>

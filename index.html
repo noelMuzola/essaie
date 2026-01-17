@@ -24,16 +24,27 @@
                 </div>
                 <nav>
                     <a class="actived" href="index.html">Accueil</a>
-                    <a href="#">Apropos</a>
+                    <a href="activites.html">Activités</a>
+                    <a href="evenement.html">Événements</a>
+                    <a href="apropos.html">Apropos</a>
                     <a href="contact.html">Contact</a>
                 </nav>
                 <div class="header-buttons">
                     <a href="don.html" class="btn-donate">Faire un don</a>
-                    <button class="mobile-menu-btn">
+                    <button class="mobile-menu-btn" id="mobile-menu-btn">
                         <span class="material-symbols-outlined">menu</span>
                     </button>
                 </div>
             </div>
+            <!-- MENU MOBILE -->
+            <nav class="mobile-menu" id="mobile-menu">
+                <a class="actived" href="index.html">Accueil</a>
+                <a href="activites.html">Activités</a>
+                <a href="evenement.html">Événements</a>
+                <a href="apropos.html">Apropos</a>
+                <a href="contact.html">Contact</a>
+                <a href="don.html" class="mobile-donate-btn">Faire un don</a>
+            </nav>
         </header>
 
         <!-- SECTION HÉROÏQUE -->
@@ -44,11 +55,12 @@
                     <span class="material-symbols-outlined">raven</span>
                     <span>Paix, Foi, Confiance</span>
                 </div> -->
-                <h1 class="hero-title">Une famille en <span class="highlight">Christ</span></h1>
+                <h1 class="hero-title">Paroisse <span class="highlight">Saint Levan</span></h1>
+                <h2 class="sub-title">Une famille en <span class="highlight">Christ</span></h2>
                 <p class="hero-subtitle">"Car là où deux ou trois sont assemblés en mon nom, je suis au milieu d'eux."<span class="hero-quote">— Matthieu 18:20</span></p>
                 <div class="hero-buttons">
-                    <button class="btn-primary">Laissez-nous un message</button>
-                    <button class="btn-secondary">Horaires des cultes</button>
+                    <a href="contact.html"><button class="btn-primary">Laissez-nous un message</button></a>
+                    <a href="activites.html"><button class="btn-secondary">Horaires des cultes</button></a>
                 </div>
             </div>
             <div class="hero-scroll-hint">
@@ -102,7 +114,7 @@
                         <div class="image-grid">
                             <div style="position: relative;">
                                 <div class="image-placeholder">
-                                    <img width="100%" height="100%" src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/15/33/48/2b/cathedrale-notre-dame.jpg?w=1200&h=-1&s=1" alt="notre cathedrale">
+                                    <img class="redImg" width="100%" height="100%" src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/15/33/48/2b/cathedrale-notre-dame.jpg?w=1200&h=-1&s=1" alt="notre cathedrale">
                                 </div>
                                 <div class="stat-box">
                                     <span class="stat-number">500+</span>
@@ -115,7 +127,7 @@
                                     <span class="stat-label">Années d'existence</span>
                                 </div>
                                 <div class="image-placeholder" style="margin-top: 16px;">
-                                    <img width="100%" height="100%" src="https://www.diocesedematadi.net/medias/images/cathedrale-de-matadi-16-.jpg" alt="notre paroisse">
+                                    <img class="redImg" width="100%" height="100%" src="https://www.diocesedematadi.net/medias/images/cathedrale-de-matadi-16-.jpg" alt="notre paroisse">
                                 </div>
                             </div>
                         </div>
@@ -135,7 +147,7 @@
                         
                     </div>
                     <div class="timeline">
-                        <img width="100%" height="100%" src="https://cencordc.org/images/photo_cenco/kinsatu.jpg" alt="cathedral de kinsatu">
+                        <img class="redImg" width="100%" height="100%" src="https://cencordc.org/images/photo_cenco/kinsatu.jpg" alt="cathedral de kinsatu">
                         </div>
                     </div>
                 </div>
@@ -158,29 +170,32 @@
                         <span class="section-label">Agenda</span>
                         <h2>Prochains événements</h2>
                     </div>
-                    <a href="#" class="view-all-link">Voir tout l'agenda <span class="material-symbols-outlined">arrow_right_alt</span></a>
+                    <a href="evenement.html" class="view-all-link">Voir tout l'agenda <span class="material-symbols-outlined">arrow_right_alt</span></a>
                 </div>
                 <div class="events-grid">
                     <article class="event-card">
                         <div class="event-image">
-                            <span class="material-symbols-outlined">event</span>
-                            <span class="event-date">12 NOV</span>
+                            <img width="100%" height="100%" src="img/louange.png" alt="Soirée de Louange">
+                            <!-- <span class="material-symbols-outlined">event</span> -->
+                            <span class="event-date">22 JAN</span>
                         </div>
                         <h3 class="event-title">Soirée de Louange</h3>
                         <p class="event-description">Une soirée spéciale dédiée à la musique et à la prière, ouverte à tous.</p>
                     </article>
                     <article class="event-card">
                         <div class="event-image">
-                            <span class="material-symbols-outlined">groups</span>
-                            <span class="event-date">15 NOV</span>
+                            <img width="100%" height="100%" src="img/jeune.png" alt="Groupe de Jeunes">
+                            <!-- <span class="material-symbols-outlined">groups</span> -->
+                            <span class="event-date">25 JAN</span>
                         </div>
                         <h3 class="event-title">Groupe de Jeunes</h3>
                         <p class="event-description">Rencontre hebdomadaire pour les 18-25 ans. Pizza, partage et bonne humeur.</p>
                     </article>
                     <article class="event-card">
                         <div class="event-image">
-                            <span class="material-symbols-outlined">restaurant</span>
-                            <span class="event-date">20 NOV</span>
+                            <img width="100%" height="100%" src="img/repas.png" alt="Repas Solidaire">
+                            <!-- <span class="material-symbols-outlined">restaurant</span> -->
+                            <span class="event-date">30 JAN</span>
                         </div>
                         <h3 class="event-title">Repas Solidaire</h3>
                         <p class="event-description">Distribution de repas et moment de convivialité pour les personnes isolées.</p>
@@ -199,7 +214,7 @@
                     <div class="footer-section">
                         <div class="footer-logo">
                             <span class="footer-logo-icon material-symbols-outlined">church</span>
-                            <span class="footer-logo-text">Église Lumière</span>
+                            <span class="footer-logo-text">Saint Levan</span>
                         </div>
                         <p class="footer-description">
                             Une communauté de foi, d'espérance et d'amour, dédiée à servir notre prochain et à grandir ensemble spirituellement.
@@ -208,10 +223,11 @@
                     <div class="footer-section">
                         <h3>Liens rapides</h3>
                         <ul class="footer-list">
-                            <li><a href="#">À propos de nous</a></li>
-                            <li><a href="#">Nos croyances</a></li>
-                            <li><a href="#">Horaires des cultes</a></li>
-                            <li><a href="#">Événements</a></li>
+                            <a href="index.html">Accueil</a>
+                            <a href="activites.html">Activités</a>
+                            <a href="evenement.html">Événements</a>
+                            <a href="apropos.html">A propos de nous</a>
+                            <a href="contact.html">Contact</a>
                         </ul>
                     </div>
                     <div class="footer-section">
@@ -219,15 +235,15 @@
                         <ul class="footer-list" style="list-style: none;">
                             <li class="contact-info">
                                 <span class="material-symbols-outlined">location_on</span>
-                                <span>123 Rue de la Paix<br/>75000 Paris, France</span>
+                                <span>123 Av de la Paix<br/>75000 Kinshasa, RDC</span>
                             </li>
                             <li class="contact-info">
                                 <span class="material-symbols-outlined">call</span>
-                                <span>+33 1 23 45 67 89</span>
+                                <span>+243 85 36 53 815</span>
                             </li>
                             <li class="contact-info">
                                 <span class="material-symbols-outlined">mail</span>
-                                <span>contact@egliselumiere.fr</span>
+                                <span>contact@saintlevan.fr</span>
                             </li>
                         </ul>
                     </div>
@@ -241,7 +257,7 @@
                 </div>
                 <div class="footer-divider"></div>
                 <div class="footer-bottom">
-                    <p class="footer-copyright">© 2023 Église Lumière. Tous droits réservés.</p>
+                    <p class="footer-copyright">© 2025 Paroisse Saint Levan. Tous droits réservés.</p>
                     <div class="social-links">
                         <a href="#" class="social-icon">
                             <svg class="social-icon" fill="currentColor" viewBox="0 0 24 24"><path d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z"></path></svg>
@@ -253,5 +269,33 @@
                 </div>
             </div>
         </footer>
+        
+        <script>
+            // Menu mobile toggle
+            const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+            const mobileMenu = document.getElementById('mobile-menu');
+            
+            if (mobileMenuBtn) {
+                mobileMenuBtn.addEventListener('click', function() {
+                    mobileMenu.classList.toggle('active');
+                    const icon = mobileMenuBtn.querySelector('.material-symbols-outlined');
+                    if (mobileMenu.classList.contains('active')) {
+                        icon.textContent = 'close';
+                    } else {
+                        icon.textContent = 'menu';
+                    }
+                });
+            }
+            
+            // Fermer le menu quand on clique sur un lien
+            const mobileMenuLinks = mobileMenu.querySelectorAll('a');
+            mobileMenuLinks.forEach(link => {
+                link.addEventListener('click', function() {
+                    mobileMenu.classList.remove('active');
+                    const icon = mobileMenuBtn.querySelector('.material-symbols-outlined');
+                    icon.textContent = 'menu';
+                });
+            });
+        </script>
     </body>
 </html>
